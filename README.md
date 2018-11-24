@@ -5,7 +5,7 @@ Adaptive View
 
 V1.0.0
 
-Author: Tom Dennis, Jendrzyca 
+Author: Tom Dennis, Piotr Jendrzyca 
 
 Front end library that allows for adaptive view creation and management.
 Utilize by adding enableAdaptive and options classes on a parent
