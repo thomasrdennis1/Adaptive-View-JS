@@ -1,4 +1,4 @@
-# adaptiveview
+# Adaptive View JS
 
 ------------------------------------------------------------
 Adaptive View
