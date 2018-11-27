@@ -16,13 +16,12 @@ const AdaptiveView = function(el) {
 	this.el = el;
 	this.$el = $(el);
 	this.breakpoint = this.$el.attr("data-breakpoint") || "576px";
-
-	this.init = () => {
-		this.onMediaChange(el);
-	}
-
-	this.mediaQuery = window.matchMedia(`(min-width: ${this.breakpoint})`);
-	this.mediaQuery.addListener(this.onMediaChange.bind(this));
+	this.el = el;
+	this.$el = $(el);
+	this.breakpoint = this.$el.attr("data-breakpoint") || "992px";
+	const mediaQuery = window.matchMedia(`(min-width: ${this.breakpoint})`);
+	this.onMediaChange.call(this, mediaQuery);
+	mediaQuery.addListener(this.onMediaChange.bind(this));
 };
 
 AdaptiveView.prototype.onMediaChange = function(e) {
